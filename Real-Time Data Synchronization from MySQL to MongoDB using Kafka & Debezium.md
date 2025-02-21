@@ -12,9 +12,8 @@ This project was developed on **Windows 11** using the following technologies:
 - **Kafka 3.8.1** - Manages real-time data streaming.
 - **Debezium MySQL Connector 2.5.1.Final** - Captures MySQL changes.
 - **MongoDB Kafka Connector 1.14.1** - Writes Kafka changes to MongoDB.
-- **PowerShell** - Command-line execution.
 - **MongoDB Compass** - GUI for MongoDB visualization
-- **java 17.0.12** - https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html
+- **java 17.0.12** 
 
 ### **Project Workflow**
 1. **MySQL database (`eticaret`)** is created.
