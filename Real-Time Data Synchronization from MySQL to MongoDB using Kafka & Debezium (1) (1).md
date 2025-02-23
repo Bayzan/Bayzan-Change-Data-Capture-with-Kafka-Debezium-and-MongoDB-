@@ -124,14 +124,13 @@ Even after updating `my.ini`, MySQL **could still throw time zone errors**. To f
 📥 **Download the `zoneinfo.sql` file here:**  
 🔗 [zoneinfo.sql](https://github.com/Bayzan/Change-Data-Capture-with-MySQL-MongoDB-Kafka-Debezium/blob/main/zoneinfo.sql)  
 
-### **🛠 Steps to Import `zoneinfo.sql` into MySQL**  
-I placed the `zoneinfo.sql` file inside **the same directory as Kafka**:  
+### **🛠 Steps to Import `zoneinfo.sql` into MySQL**   
 ```plaintext
-C:\kafka_2.13-3.8.1\zoneinfo.sql
+C:\kafka\zoneinfo.sql
 ```
 Then, I ran the following command in **PowerShell** to load the time zone data into MySQL:  
 ```powershell
-mysql_tzinfo_to_sql C:/kafka_2.13-3.8.1/zoneinfo.sql | mysql -u root -p mysql
+mysql_tzinfo_to_sql C:/kafka/zoneinfo.sql | mysql -u root -p mysql
 ```
 ✅ **This ensured that MySQL properly recognized and used time zone information.**  
 
